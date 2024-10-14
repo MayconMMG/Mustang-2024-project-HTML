@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="assets/img/Ford_mustang_logo.png">
+    <title>Mustang</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#sobre"><span>Starting</span></a>
+            <a href="#design"><span>Design</span></a>
+            <a href="#interior"><span>Interior</span></a>
+            <a href="https://www.ford.com.br/performance/mustang/gt-performance/" target="_blank"><span>PURCHASE</span></a>
+        </nav>
+    </header>
+    <main>
+        <section id="sobre">
+            <div class="desc">
+                <div>
+                    <h1 id="new">THE NEW</h1>
+                    <h1>FORD MUSTANG <span id="year">2024</span></h1>
+                    <p>The 2024 Ford Mustang is an automotive masterpiece that combines robust performance with iconic design.</p>
+                </div>
+                <figure>
+                    <img src="assets/img/mustang_principal/front.png" alt="mustang 2024 front">
+                </figure>
+            </div>
+        </section>
+
+        <section id="design">
+            <div class="top_des">
+                <div class="desc_des">
+                    <div class="color">
+                        <h1>The masterpiece in design</h1>
+                        <h2>And you choose the color:</h2>
+                        <div id="bts">
+                            <button id="bt_red" onclick="mudarCor('assets/img/mustang_principal/rightside_plane_cropped_desc_red.png')"></button>
+                            <button id="bt_blue" onclick="mudarCor('assets/img/mustang_principal/rightside_plane_cropped_desc.png')"></button>
+                            <button id="bt_black" onclick="mudarCor('assets/img/mustang_principal/rightside_plane_cropped_desc_black.png')"></button>
+                        </div>
+                        <script>
+                            function mudarCor(cor) {
+                              document.getElementById('carImage').src = cor;
+                            }
+                          </script>
+                    </div>
+                    <div id="aero">
+                        <h1>Aerodynamic Silhouette</h1>
+                        <p>Aggressive lines and long hood.</p>
+                    </div>
+                    <div id="wheels">
+                        <h1>Customizable Wheels</h1>
+                        <p>Various styles and sizes.</p>
+                    </div>
+                    <div id="lights">
+                        <h1>LED Lighting</h1>
+                        <p>Modern front and rear lights.</p>
+                    </div>
+                    <div id="air">
+                        <h1>Hood Air Intake:</h1>
+                        <p>engine cooling and performance.</p>
+                    </div>
+                </div>
+            </div>
+            <figure>
+                <img id="carImage" src="assets/img/mustang_principal/rightside_plane_cropped_desc.png" alt="Mustang 2024 Right side"/>
+            </figure>
+        </section>
+        <section id="interior">
+            <div id="interior_desc">
+                <div id="volante">
+                    <h1>The steering wheel</h1>
+                    <p>The steering wheel of the 2024 Ford Mustang features a sporty, leather-wrapped design with multifunction controls, offering a comfortable grip and intuitive access to driving modes and infotainment</p>
+                </div>
+                <div id="multimedia">
+                    <h1>The multimedia system</h1>
+                    <p>The 2024 Ford Mustang's multimedia system features a 13.2-inch SYNC 4 touchscreen with Apple CarPlay, Android Auto, and a premium B&O sound system, providing intuitive controls and seamless connectivity for an enhanced driving experience.</p>
+                </div>
+                <div id="carbon">
+                    <h1>The carbon fiber</h1>
+                    <p>The 2024 Ford Mustang offers carbon fiber elements in select trims, adding both style and performance. These lightweight components, like the interior trim and optional wheels, reduce weight for better handling and a more aggressive, sporty look.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a href="https://www.ford.com.br/" target="_blank">All rights reserved by <span>Ford</span></a>
+        </div>
+    </footer>
+ 
+
+</body>
+</html>

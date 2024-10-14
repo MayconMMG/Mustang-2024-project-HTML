@@ -1,0 +1,299 @@
+@font-face {
+    font-family:longhaul;
+    src: url(../fonts/Longhaul.ttf);
+}
+@font-face {
+    font-family:racesport;
+    src: url(../fonts/Race\ Sport.ttf);
+}
+@font-face {
+    font-family:speeday;
+    src: url(../fonts/Speeday-Regular-FFP.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: black;
+}
+nav {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.39);
+    backdrop-filter:blur(6px);
+    width: 100%;
+    height: 8%;
+    display: flex;
+}
+nav a {
+    flex: 1;
+    text-decoration: none;
+    color: white;
+    font-family:racesport;
+    font-size: 20px;
+    letter-spacing: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a:hover {
+    border-bottom: 2px solid white;
+}
+main section {
+    height: 100vh;
+    padding-top: 12vh;
+}
+
+#sobre {
+    background-image:url(../img/bg_sections/2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.desc {
+    display: flex;
+}
+.desc figure {
+    flex: 3;
+    margin-top: 100px;
+}
+.desc figure img {
+    max-width: 100%;
+    height: auto;
+}
+.desc figure img:hover {
+    content: url(../img/mustang_principal/front-on.png);
+
+}
+.desc div {
+    flex: 1;
+    margin-top: 4,5vh;
+    margin-left: 5vw;
+    text-align: center;
+}
+.desc #new {
+    font-family:longhaul;
+    color: white;
+    font-size: 8vh;
+    text-shadow:none;
+    margin-left: 9vh;
+}
+.desc h1 {
+    font-family:speeday;
+    color: white;
+    font-size: 15vh;
+    text-shadow: 5px 5px #1266b0;
+}
+.desc div #year{
+    font-family:racesport;
+    color: #1266b0;
+    font-size: 23vh;
+    letter-spacing: 20px;
+    text-shadow: 11px 3px white;
+
+}
+.desc div p {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#design {
+    background-image:url(../img/bg_sections/vecteezy_industrial-background-factory-old-building-with-neon-lights_28831862.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#design div {
+    flex: 1;
+}
+#design figure {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+#design figure img {
+    max-width: 80%;
+}
+.top_des {
+    display: flex;
+}
+.desc_des {
+    height:30vh;
+    width: 100%;
+    margin-right: 20px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color:white;
+    position: relative;
+    
+}
+.color h1 {
+    font-family:racesport;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px #1266b0;
+}
+.color h2 {
+    font-family:racesport;
+    letter-spacing: 10px;
+    text-shadow: 5px 5px #1266b0;
+}
+#bts {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+#bts button {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 100px;
+}
+#bt_red {
+    background-color: red;
+}
+#bt_blue {
+    background-color: #1266b0;
+}
+#bt_black {
+    background-color: black;
+}
+#bts button:hover {
+    width: 60px;
+    height: 60px;
+}
+#aero{
+    text-align: center;
+    position: absolute;
+    top: 35vh;
+    left: 19vw;
+    text-shadow: 2px 2px #000000;
+    font-size: 2vh;
+}
+#wheels {
+    text-align: center;
+    position: absolute;
+    top: 71vh;
+    left: 35vw;
+    text-shadow: 2px 2px #000000;
+    font-size: 2vh;
+}
+#lights {
+    text-align: center;
+    position: absolute;
+    top: 53vh;
+    right: 19vw;
+    text-shadow: 2px 2px #000000;
+    font-size: 2vh;
+}
+#air {
+    text-align: center;
+    position: absolute;
+    top: 48vh;
+    right: 0vw;
+    text-shadow: 2px 2px #000000;
+    font-size: 2vh;
+}
+#interior {
+    background-image:url(../img/mustang_principal/interior_desc.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#interior_desc {
+    width: 100%;
+    position: relative;
+    color: white;
+}
+#volante {
+    width: 20vw;
+    text-align: center;
+    position: absolute;
+    top: 64vh;
+    left: 45vw;
+    text-shadow: 1px 1px #0297fa;
+    font-size: 2vh;
+}
+#volante h1 {
+    margin-bottom: 5px;
+
+}
+#volante p {
+    font-size: 2vh;
+    display:none;
+}
+#volante:hover p {
+    font-size: 2vh;
+    display:block;
+}
+#multimedia {
+    width: 20vw;
+    text-align: center;
+    position: absolute;
+    top: 6vh;
+    right: 4vw;
+    text-shadow: 1px 1px #0297fa;
+    font-size: 2vh;
+}
+#multimedia h1 {
+    margin-bottom: 5px;
+
+}
+#multimedia p {
+    font-size: 2vh;
+    display:none;
+}
+#multimedia:hover p {
+    font-size: 2vh;
+    display:block;
+}
+#carbon {
+    width: 20vw;
+    text-align: center;
+    position: absolute;
+    top: 24vh;
+    left: 3vw;
+    text-shadow: 1px 1px #0297fa;
+    font-size: 2vh;
+}
+#carbon h1 {
+    margin-bottom: 5px;
+
+}
+#carbon p {
+    font-size: 2vh;
+    display:none;
+}
+#carbon:hover p {
+    font-size: 2vh;
+    display:block;
+}
+footer {
+    width: 100%;
+    height: 30px;
+    background-color: #1266b0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer div a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+footer div a:hover {
+    text-decoration:underline;
+}
+
